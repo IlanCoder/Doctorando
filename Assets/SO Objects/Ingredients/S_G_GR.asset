@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 813168cbc482e4a45814fa274d129cb1, type: 3}
-  m_Name: TestIngredient
+  m_Name: S_G_GR
   m_EditorClassIdentifier: 
   sprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
   ingredientDuality: 0

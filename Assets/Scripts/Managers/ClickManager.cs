@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ClickManager : MonoBehaviour {
   public GameObject menu;
+  public GameObject ingredients;
 
   void Update() {
 		if (Input.GetKeyDown(KeyCode.Mouse0)) {
@@ -16,6 +17,7 @@ public class ClickManager : MonoBehaviour {
 
   void PopUpMenu() {
     menu.SetActive(!menu.activeSelf);
+    ingredients.SetActive(!menu.activeSelf);
 	}
 
 	private void RayCast() {

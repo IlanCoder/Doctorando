@@ -9,9 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d77af7636c4c75f40875cccde2e3ba60, type: 3}
-  m_Name: Triangle
+  m_Script: {fileID: 11500000, guid: 813168cbc482e4a45814fa274d129cb1, type: 3}
+  m_Name: S_G_CR
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: b120a18dd26ea4f47a60d28a5558351b, type: 3}
-  clueShape: 3
-  clueColor: 0
+  sprite: {fileID: 0}
+  ingredientDuality: 0
+  ingredientQuality: 0
+  ingredientShape: 0
+  ingredientColor: 0
+  unlocked: 0
+  used: 0

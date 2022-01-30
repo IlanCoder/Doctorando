@@ -9,10 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a1aa42eb758e624b89bd0b3efc929aa, type: 3}
-  m_Name: 1
+  m_Script: {fileID: 11500000, guid: 813168cbc482e4a45814fa274d129cb1, type: 3}
+  m_Name: A_G_BL
   m_EditorClassIdentifier: 
-  clues:
-  - {fileID: 11400000, guid: c2df3c8b4aa1d5d478dc85fb11c6d095, type: 2}
-  - {fileID: 11400000, guid: 893ce08cbdd8c4e41b31bc476175683f, type: 2}
-  ingredients: []
+  sprite: {fileID: 2772297357050385539, guid: c0251a3f5021eac43879ac44dd5eb86a, type: 3}
+  ingredientDuality: 1
+  ingredientQuality: 1
+  ingredientShape: 0
+  ingredientColor: 2
+  unlocked: 1
+  used: 0

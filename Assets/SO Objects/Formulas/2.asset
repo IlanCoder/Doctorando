@@ -9,8 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1ddee2446ee18b4881f232228bc0bac, type: 3}
-  m_Name: TestGroup
+  m_Script: {fileID: 11500000, guid: 7a1aa42eb758e624b89bd0b3efc929aa, type: 3}
+  m_Name: 2
   m_EditorClassIdentifier: 
-  ingredientsInGroup:
-  - {fileID: 11400000, guid: 576fa8721a427eb4a8bbefc8ac10b098, type: 2}
+  clues:
+  - {fileID: 11400000, guid: cadfa513039ca254a848e8aeba6fd029, type: 2}
+  - {fileID: 11400000, guid: e6bc48c2fa9815e4b9855a22c9d9e6e2, type: 2}
+  ingredients: []

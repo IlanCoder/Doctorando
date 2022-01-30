@@ -30,19 +30,19 @@ public class CharacterSpriteManager : MonoBehaviour {
   void CheckNewDualitySprite(float dualityScore) {
 		switch (currentPhase) {
       case SPRITEPHASE.NEUTRAL:
-        CheckBackToNeutral(dualityScore);
+        CheckFromNeutral(dualityScore);
         break;
       case SPRITEPHASE.ALCHEMY:
-        CheckFromNeutral(dualityScore);
+        CheckBackToNeutral(dualityScore);
         break;
       case SPRITEPHASE.SCIENCE:
-        CheckFromNeutral(dualityScore);
+        CheckBackToNeutral(dualityScore);
         break;
 		}
 	}
 
   void CheckBackToNeutral(float dualityScore) {
-    if(Mathf.Abs(dualityScore)< PHASE_CHANGE_VALUE) {
+    if(Mathf.Abs(dualityScore) < PHASE_CHANGE_VALUE) {
       ChangePhase(SPRITEPHASE.NEUTRAL);
 		}
 	}

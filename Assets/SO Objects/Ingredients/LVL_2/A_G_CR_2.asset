@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 813168cbc482e4a45814fa274d129cb1, type: 3}
-  m_Name: S_G_TR
+  m_Name: A_G_CR_2
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
-  ingredientDuality: 0
+  sprite: {fileID: 3854038991718700940, guid: c0251a3f5021eac43879ac44dd5eb86a, type: 3}
+  ingredientDuality: 1
   ingredientQuality: 0
-  ingredientShape: 0
+  ingredientShape: 1
   ingredientColor: 0
-  unlocked: 0
+  unlocked: 1
   used: 0

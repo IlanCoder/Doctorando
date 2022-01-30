@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 813168cbc482e4a45814fa274d129cb1, type: 3}
+  m_Name: A_G_CR
+  m_EditorClassIdentifier: 
+  sprite: {fileID: -1758146419783797150, guid: c0251a3f5021eac43879ac44dd5eb86a, type: 3}
+  ingredientDuality: 1
+  ingredientQuality: 0
+  ingredientShape: 1
+  ingredientColor: 0
+  unlocked: 1
+  used: 0

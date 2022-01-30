@@ -9,9 +9,11 @@ public class CharacterSpriteManager : MonoBehaviour {
     SCIENCE
 	}
 
-  public List<Sprite> MaleSprites;
-  public List<Sprite> FemaleSprites;
+  public SpriteRenderer character;
+  public List<Sprite> maleSprites;
+  public List<Sprite> femaleSprites;
   List<Sprite> selectedGenderSprites;
+  [SerializeField] bool male;
 
   SPRITEPHASE currentPhase = SPRITEPHASE.NEUTRAL;
 
@@ -31,10 +33,10 @@ public class CharacterSpriteManager : MonoBehaviour {
         CheckBackToNeutral(dualityScore);
         break;
       case SPRITEPHASE.ALCHEMY:
-        CheckBackToNeutral(dualityScore);
+        CheckFromNeutral(dualityScore);
         break;
       case SPRITEPHASE.SCIENCE:
-        CheckBackToNeutral(dualityScore);
+        CheckFromNeutral(dualityScore);
         break;
 		}
 	}
@@ -47,8 +49,12 @@ public class CharacterSpriteManager : MonoBehaviour {
 
   void ChangePhase(SPRITEPHASE newPhase) {
     currentPhase = newPhase;
-    //ChangeSprite
-	}
+		if (male) {
+      character.sprite = maleSprites[(int)currentPhase];
+      return;
+		}
+    character.sprite = femaleSprites[(int)currentPhase];
+  }
 
   void CheckFromNeutral(float dualityScore) {
     if (dualityScore >= PHASE_CHANGE_VALUE) {

@@ -21,6 +21,7 @@ public class ClickManager : MonoBehaviour {
 	private void RayCast() {
     RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
     if (hit != null) {
+      if (hit.transform == null) return;
       if(hit.transform.TryGetComponent<IngredientView>(out IngredientView view)) {
         SelectInrgedient(view);
 			}

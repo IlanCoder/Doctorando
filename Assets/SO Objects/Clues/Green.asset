@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d77af7636c4c75f40875cccde2e3ba60, type: 3}
   m_Name: Green
   m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: e1728935005cc624ab4f9d460621659f, type: 3}
   clueShape: 0
   clueColor: 3

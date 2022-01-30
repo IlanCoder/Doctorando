@@ -11,7 +11,7 @@ public class EndingManager : MonoBehaviour
 	public Sprite mageEnding;
 	public GameObject endingScreen;
 
-	float mediocrityScore = 0;
+	[SerializeField] float mediocrityScore = 0;
 	const int SCORE_ENDGAME_REQ = 10;
 
 	private void OnEnable() {
@@ -31,8 +31,6 @@ public class EndingManager : MonoBehaviour
 			EnableGoodEnding(dualityScore);
 		}
 	}
-
-	
 
 	void CalculateFormulasEnding() {
 		EnableBadEnding();

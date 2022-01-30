@@ -8,13 +8,21 @@ public class IngredientsManager : MonoBehaviour {
 
 	public static event Action OnUnlockGroup;
 
+	private void Awake() {
+		foreach(IngredientsGroup group in ingGroups) {
+			foreach(Ingredient ingredient in group.IngredientsInGroup) {
+				ingredient.unlocked = false;
+			}
+		}
+	}
+
 	private void OnEnable() => FormulasManager.OnIndexChanged += UnlockGroup;
 	private void OnDisable() => FormulasManager.OnIndexChanged -= UnlockGroup;
 
 	void UnlockGroup(int index) {
 		if (index >= ingGroups.Count) return;
 		foreach(Ingredient ingredient in ingGroups[index].IngredientsInGroup) {
-			ingredient.unlocked = true;
+			ingredient.Unlock();
 		}
 		OnUnlockGroup?.Invoke();
 	}

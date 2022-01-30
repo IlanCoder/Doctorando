@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: 1
   m_EditorClassIdentifier: 
   clues:
-  - {fileID: 11400000, guid: 893ce08cbdd8c4e41b31bc476175683f, type: 2}
+  - {fileID: 11400000, guid: e6bc48c2fa9815e4b9855a22c9d9e6e2, type: 2}
   - {fileID: 11400000, guid: cadfa513039ca254a848e8aeba6fd029, type: 2}
-  ingredients: []
+  ingredients:
+  - {fileID: 11400000, guid: 576fa8721a427eb4a8bbefc8ac10b098, type: 2}
+  - {fileID: 11400000, guid: 576fa8721a427eb4a8bbefc8ac10b098, type: 2}

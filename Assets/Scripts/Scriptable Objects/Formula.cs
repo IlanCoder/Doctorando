@@ -51,7 +51,6 @@ namespace Formulas {
 		#region PRIVATE_FUNCTIONS
 		private float SolveColor(Clue.COLOR clueColor, Ingredient ingredient){
 			if (clueColor != ingredient.IngredientColor) {
-				ingredient.used = true;
 				return 1;
 			}	
 			if (ingredient.IngredientQuality == Ingredient.QUALITY.BAD) return 0.5f;
@@ -60,11 +59,9 @@ namespace Formulas {
 
 		private float SolveShape(Clue.SHAPE clueShape, Ingredient ingredient) {
 			if (clueShape != ingredient.IngredientShape) {
-				ingredient.used = true;
 				return 1;
 			}
 			if (ingredient.IngredientQuality == Ingredient.QUALITY.BAD) return 0.5f;
-			ingredient.used = true;
 			return 0;
 		}
 		#endregion

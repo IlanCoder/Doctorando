@@ -33,8 +33,8 @@ namespace Ingredients {
 		public bool used = false;
 		#endregion
 
-		private void Awake() {
-			unlocked = false;
+		public void Unlock() {
+			unlocked = true;
 			used = false;
 		}
 	}
